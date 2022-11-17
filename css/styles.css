@@ -28,13 +28,18 @@ h1, h2, h3, p, ul {
     margin: 0;
 }
 
-/*header styles*/
+.section {
+    padding: 94px;
+}
 
 .container {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
+/*header styles*/
+
+
 /* main-nav */
 
 .logo {
@@ -58,6 +63,7 @@ h1, h2, h3, p, ul {
 .main-nav {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .nav-list {
@@ -111,9 +117,8 @@ h1, h2, h3, p, ul {
 
 /* main styles */
 
-.hero {
+.hero-bg {
     background-color: var(--secondary-page-color);
-
 }
 
 .hero-title {
@@ -145,8 +150,7 @@ h1, h2, h3, p, ul {
 
 .skills {
     display: flex;
-    margin-top: 94px;
-}
+ }
 
 .skills .item {
     width: 270px;
@@ -176,8 +180,39 @@ h1, h2, h3, p, ul {
     letter-spacing: 0.03em;
 }
 
-.our-team {
+/* our-works */
+
+
+.our-work {
+    display: flex;
+}
+
+.our-work .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.title {
+    margin-bottom: 50px  ;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* our-team */
+
+.our-team-bg {
     background-color: #F5F4FA;;
+}
+
+.our-team {
+    display: flex;
+}
+
+.our-team .item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .member {
@@ -195,6 +230,7 @@ h1, h2, h3, p, ul {
 }
 
 /* footer styles */
+
 .footer {
     background-color: var(--secondary-page-color);
 }
