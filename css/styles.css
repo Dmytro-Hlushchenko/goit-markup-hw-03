@@ -13,7 +13,11 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-h1, h2, h3, p, ul {
+h1,
+h2,
+h3,
+p,
+ul {
     margin: 0;
 }
 
@@ -33,9 +37,9 @@ h1, h2, h3, p, ul {
 }
 
 .container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 /*header styles*/
 
@@ -68,10 +72,9 @@ h1, h2, h3, p, ul {
 
 .nav-list {
     display: flex;
-    margin-left: 93px;
+    padding-left: 93px;
 
 }
-
 
 .nav-list .link {
     color:inherit;
@@ -112,7 +115,6 @@ h1, h2, h3, p, ul {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
 }
 
 /* main styles */
@@ -122,6 +124,8 @@ h1, h2, h3, p, ul {
 }
 
 .hero-title {
+    width: 696px;
+    margin: auto;
     color: #ffffff;
     font-weight: 900;
     font-size: 44px;
@@ -133,8 +137,10 @@ h1, h2, h3, p, ul {
 
 .hero-btn {
     display: block;
-    margin: auto;
-     
+    margin: 27px auto 0;
+    width: 216px;
+    height: 50px;
+
     background-color: #2196F3;
     color: #ffffff;
     cursor: pointer;
@@ -145,8 +151,9 @@ h1, h2, h3, p, ul {
     letter-spacing: 0.06em;
     border: 1px solid #000000;
     border-radius: 4px;
-    padding: 10px 32px;
 }
+
+/* skills section */
 
 .skills {
     display: flex;
@@ -180,7 +187,7 @@ h1, h2, h3, p, ul {
     letter-spacing: 0.03em;
 }
 
-/* our-works */
+/* our-works section*/
 
 
 .our-work {
@@ -192,7 +199,7 @@ h1, h2, h3, p, ul {
 }
 
 .title {
-    margin-bottom: 50px  ;
+    margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
@@ -201,7 +208,7 @@ h1, h2, h3, p, ul {
     letter-spacing: 0.03em;
 }
 
-/* our-team */
+/* our-team section*/
 
 .our-team-bg {
     background-color: #F5F4FA;;
@@ -231,7 +238,9 @@ h1, h2, h3, p, ul {
 
 /* footer styles */
 
-.footer {
+.footer  {
+    padding-bottom: 60px;
+    padding-top: 60px;
     background-color: var(--secondary-page-color);
 }
 
@@ -239,7 +248,17 @@ h1, h2, h3, p, ul {
     color: #ffffff;
 }
 
+.logo-footer {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
 .footer-adress {
+    display: inline-block;
+    margin-top: 28px;
+
     color: #ffffff;
     font-size: 14px;
     line-height: 1.71;
@@ -247,6 +266,9 @@ h1, h2, h3, p, ul {
 }
 
 .footer-contact {
+    display: inline-block;
+    margin-top: 12px;
+
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 1.71;
@@ -261,6 +283,14 @@ h1, h2, h3, p, ul {
 }   
 
 /*portfolio main*/
+
+.filter {
+    display: flex;
+}
+
+.project-list {
+    display: flex;
+}
 
 .filter-btn {
     background-color: #F5F4FA;
