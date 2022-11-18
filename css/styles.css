@@ -37,7 +37,7 @@ ul {
 }
 
 .container {
-    width: 1170px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -223,17 +223,22 @@ ul {
 }
 
 .member {
-    
+    margin-top: 30px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 .member-about {
+    margin-top: 10px;
+
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    text-align: center  ;
 }
 
 /* footer styles */
@@ -286,11 +291,20 @@ ul {
 
 .filter {
     display: flex;
+    justify-content: center;
+}
+
+.filter .item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .project-list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
+
+
 
 .filter-btn {
     background-color: #F5F4FA;
