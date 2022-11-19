@@ -13,6 +13,12 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -36,15 +42,17 @@ ul {
     padding: 94px;
 }
 
+.section.no-padding {
+    padding-top: 0px;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
+
 /*header styles*/
-
-
-/* main-nav */
 
 .logo {
     padding-top: 24px;
@@ -155,6 +163,10 @@ ul {
 
 /* skills section */
 
+.nopadding {
+    padding-bottom: -94px;
+}
+
 .skills {
     display: flex;
  }
@@ -181,6 +193,8 @@ ul {
     text-transform: uppercase;
 }
 .about {
+    margin-top: 10px    ;
+
     color: var(--secondary-text-color);
     font-size: 14px;
     line-height: 1.71;
@@ -189,13 +203,14 @@ ul {
 
 /* our-works section*/
 
-
 .our-work {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.our-work .item:not(:last-child) {
-    margin-right: 30px;
+.our-work .item {
+    flex-basis: calc(100%-60px) / 3;
 }
 
 .title {
@@ -216,15 +231,23 @@ ul {
 
 .our-team {
     display: flex;
+    flex-wrap: wrap;
+    gap:30px;
 }
 
-.our-team .item:not(:last-child) {
-    margin-right: 30px;
+.our-team .item {
+    flex-basis: calc(100%-90px) / 4;
 }
 
-.member {
-    margin-top: 30px;
-
+.team-title {
+    padding-top:  30px;
+    padding-bottom: 30px;
+    
+    background-color: var(--primary-page-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.member-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -289,6 +312,9 @@ ul {
 
 /*portfolio main*/
 
+/* filter buttons */
+
+
 .filter {
     display: flex;
     justify-content: center;
@@ -298,16 +324,24 @@ ul {
     margin-right: 8px;
 }
 
-.project-list {
+.project-set {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    
+    margin-top: 50px;
+    
 }
 
-
+.project-set .item {
+    flex-basis: calc(100%-60px) / 3;
+}
 
 .filter-btn {
+    padding: 6px 22px;
     background-color: #F5F4FA;
+    border-radius: 4px;
+    border: none;
     cursor: pointer;
     font-family: inherit;
     color: var(--primary-text-color);
@@ -324,7 +358,7 @@ ul {
     color: #ffffff;
 }
 
-.project-title {
+.project-name {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -332,8 +366,18 @@ ul {
 }
 
 .project-about {
+    margin-top: 4px;
+
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.86;
     letter-spacing: 0.03em;
+}
+
+.project-title {
+    padding: 20px 24px;
+
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
 }
